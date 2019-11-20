@@ -35,9 +35,4 @@ void      Timeline_addEvent     (Timeline *,TLTime,TLEventHandler,TLData *);
 void      Timeline_removeEvent  (Timeline *,TLEventHandler,TLData *);
 void      Timeline_begin        (Timeline *,TLTime);
 
-/*
-
- last event determence the timeline duration
-
- */
 #endif
