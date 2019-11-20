@@ -29,15 +29,15 @@ int main(){
 	//add an event half way the timeline.
 	Timeline_addEvent(tl,2500,onTimelineCenter,(TLData *)argumentSample);
 
-  //get milliseconds
-  TLTime tm=clock()/1000;
+	//get milliseconds
+	TLTime tm=clock()/1000;
 
-  //start tl
-  Timeline_begin(tl,tm);
-  
-  //stop timing at 6 seconds
-  TLTime tm_end=tm+6000;
-  
+	//start tl
+	Timeline_begin(tl,tm);
+
+	//stop timing at 6 seconds
+	TLTime tm_end=tm+6000;
+
 	while(tm<tm_end){
 		//update current milliseconds
 		tm=clock() / 1000;
